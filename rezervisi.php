@@ -114,7 +114,8 @@
       </div>
 </section>
 
-<?php
+<?
+
 
     include("meni.php");
  ?>

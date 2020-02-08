@@ -7,11 +7,13 @@
   /* Full height */
   height: 500px; 
 
+
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
 } 
 #contact .contact-wrapper h3 {
 color:rgb(228, 79, 79);
