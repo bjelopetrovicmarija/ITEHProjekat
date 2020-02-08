@@ -11,7 +11,7 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 
-<title>LetLine</title>
+<title>HappyAirline</title>
 <link href="assets/css/bootstrap.css" rel="stylesheet" />
 <link href="assets/css/ionicons.css" rel="stylesheet" />
 <link href="assets/css/font-awesome.css" rel="stylesheet" />
@@ -42,7 +42,7 @@
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="services-wrapper">
-              <h1> Vremenska prognoza za Beograd:</h1>
+              <h1> Vremenska prognoza za Beograd narednih 10 dana:</h1>
               <div id="podaci"> </div>
 
             </div>
