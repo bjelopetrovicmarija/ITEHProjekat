@@ -12,7 +12,7 @@
         if($let->getResult()){
           $msg="Uspesno rezervisano";
         }else{
-          $msg="Neuspesna rezervacija ! Broj sedista mora biti u opsegu 0-50";
+          $msg="Neuspesna rezervacija ! Broj sedista mora biti u opsegu 1-50";
         }
      }
  ?>

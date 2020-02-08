@@ -43,13 +43,14 @@ class Let {
 		$this->setResult($q);
 	}
 
+
 	public function allReservationBySearch($id) {
 		$id = mysqli_real_escape_string($this->conn,$id);
 
 		$q = mysqli_query($this->conn, "SELECT * FROM rezervacija as r join let as l on (r.let=l.id ) join klasa as k on (l.klasa=k.idKlase) join korisnik as u on (u.idKorisnik=r.korisnik) where r.let = $id");
 		$this->setResult($q);
 	}
-
+      
 
 	public function rezervacija($letId,$datum,$brSedista) {
 
@@ -60,7 +61,7 @@ class Let {
 			
 			$userID=$_SESSION["user"]["idKorisnik"];
 			$timestamp = date('Y-m-d H:i:s', strtotime($datum));
-			if($brSedista<0 or $brSedista>50)
+			if($brSedista<1 or $brSedista>50)
 			{
 				$this->setResult(false);
 				return;
