@@ -1,7 +1,7 @@
 <?php
 include("init.php");
 
-	$array['cols'][] = array('label' => 'Kalsa','type' => 'string');
+	$array['cols'][] = array('label' => 'Klasa','type' => 'string');
     $array['cols'][] = array('label' => 'Broj letova po klasi', 'type' => 'number');
 
 	

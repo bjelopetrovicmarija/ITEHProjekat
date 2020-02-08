@@ -131,7 +131,7 @@
                           <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-magic fa" aria-hidden="true"></i></span>
                             <input type="text" class="form-control" name="novacena" id="novacena"  placeholder="Nova cena karte" required
-                            oninvalid="this.setCustomValidity('Morate uneti novvu cenu leta!')"
+                            oninvalid="this.setCustomValidity('Morate uneti novu cenu leta!')"
        oninput="this.setCustomValidity('')"/>
                           </div>
                         </div>

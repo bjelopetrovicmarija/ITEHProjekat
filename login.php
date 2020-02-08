@@ -12,7 +12,7 @@
           $msg="Uspesno ulogovan korisnik";
 		  header( 'Location: rezervisi.php' );
         }else{
-          $msg="Neuspesna prijava na sistem ";
+          $msg="Neuspešna prijava na sistem ";
         }
      }
  ?>
