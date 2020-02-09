@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 08, 2020 at 04:24 AM
+-- Generation Time: Feb 09, 2020 at 01:24 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -77,7 +77,11 @@ INSERT INTO `korisnik` (`idKorisnik`, `name`, `username`, `password`, `admin`, `
 (18, 'Mina Nikolic', 'mina', 'mina', 0, '0603699527'),
 (19, 'Milos Milakovic', 'somi', 'somi', 0, '0697854321'),
 (20, 'Nenad Ilic', 'sone', 'sone', 0, '0603699527'),
-(21, 'Mateja Djordjevic', 'mata', 'mata', 0, '0643268769');
+(21, 'Mateja Djordjevic', 'mata', 'mata', 0, '0643268769'),
+(22, 'Marko Janketic', 'mare', 'mare', 0, '0697854321'),
+(23, 'Dusica Cvijovic', 'duska', 'ifMonDzV', 0, '060987342'),
+(24, 'Lazar Mitrovic', 'laza', 'sBlLjcUa', 0, '064532765'),
+(25, 'Maja Tomic', 'makica', 'xDylWXqN', 0, '064532761');
 
 -- --------------------------------------------------------
 
@@ -102,27 +106,22 @@ INSERT INTO `let` (`id`, `mestoOd`, `mestoDo`, `klasa`, `cena`) VALUES
 (2, 'Beograd', 'Atina', 2, 89700),
 (3, 'Beograd', 'Barselona', 3, 58722),
 (4, 'Beograd', 'Frankfurt', 1, 18744),
-(5, 'Beograd', 'Helsinki', 2, 30452),
-(6, 'Beograd', 'Kopenhagen', 1, 10052),
 (7, 'Beograd', 'Pariz', 3, 36014),
 (8, 'Beograd', 'Rim', 2, 47600),
 (9, 'Beograd', 'Dizeldorf', 3, 26810),
 (10, 'Beograd', 'Istanbul', 2, 15682),
 (11, 'Nis', 'Atina', 3, 55000),
 (12, 'Nis', 'Berlin', 1, 6000),
-(13, 'Nis', 'Malme', 3, 10250),
 (14, 'Budimpesta', 'Milano', 1, 5560),
 (15, 'Budimpesta', 'Barselona', 3, 60582),
-(16, 'Budimpesta', 'Pariz', 3, 12300),
-(17, 'Temisvar', 'Dortmund', 1, 3250),
-(18, 'Temisvar', 'Tel-Aviv', 1, 8258),
 (19, 'Solun', 'Madrid', 3, 16540),
 (20, 'Beograd', 'Dubai', 3, 58600),
-(26, 'Atina', 'Barselona', 1, 13780),
 (27, 'Atina', 'Barselona', 1, 13780),
 (28, 'Pariz', 'Stokholm', 1, 25600),
-(29, 'Sofija', 'Atina', 1, 9700),
-(30, 'Beograd', 'Berlin', 2, 54300);
+(29, 'Sofija', 'Atina', 2, 18000),
+(30, 'Beograd', 'Berlin', 2, 54300),
+(31, 'Beograd', 'Moskva', 1, 23900),
+(34, 'Nis', 'Sofija', 2, 12300);
 
 -- --------------------------------------------------------
 
@@ -160,7 +159,12 @@ INSERT INTO `rezervacija` (`rezervacijaID`, `datum`, `let`, `korisnik`, `brojSed
 (16, '2020-02-29', 7, 1, 2),
 (17, '1970-01-01', 2, 9, 3),
 (18, '2020-02-08', 13, 1, 3),
-(19, '2020-06-26', 9, 1, 2);
+(19, '2020-06-26', 9, 1, 2),
+(25, '2020-02-15', 4, 22, 2),
+(26, '2020-02-15', 7, 6, 3),
+(27, '2020-02-29', 26, 1, 3),
+(28, '2020-02-17', 34, 10, 4),
+(29, '2020-05-30', 20, 1, 2);
 
 --
 -- Indexes for dumped tables
@@ -195,19 +199,19 @@ ALTER TABLE `rezervacija`
 -- AUTO_INCREMENT for table `korisnik`
 --
 ALTER TABLE `korisnik`
-  MODIFY `idKorisnik` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `idKorisnik` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `let`
 --
 ALTER TABLE `let`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `rezervacija`
 --
 ALTER TABLE `rezervacija`
-  MODIFY `rezervacijaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `rezervacijaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -88,9 +88,8 @@
                         <div class="cols-sm-10">
                           <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-calendar fa" aria-hidden="true"></i></span>
-                            <input id="datepicker" type="text" class="form-control" name="datum" id="datum"  placeholder="Datum" required
-                            oninvalid="this.setCustomValidity('Morate izabrati datum')"
-                            onvalid="this.setCustomValidity('')" />
+                            <input id="datepicker" type="text" class="form-control" name="datum" id="datum"  placeholder="Datum" 
+                            >
                           </div>
                         </div>
                     </div>
@@ -114,7 +113,7 @@
       </div>
 </section>
 
-<?
+<?php
 
 
     include("meni.php");
